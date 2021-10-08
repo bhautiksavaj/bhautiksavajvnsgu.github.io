@@ -6,10 +6,10 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="bhautik savaj personal website." />
+    <meta name="description" content="savaj bhautik portfolio." />
     <meta name="keywords"
         content="creative, cv, designer,  online cv, online resume, powerful portfolio, professional, professional resume, responsive, resume, vcard, personal website" />
-    <meta name="developer" content="savaj bhautikk">
+    <meta name="developer" content="savaj bhautik">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- FAV AND ICONS   -->
@@ -41,7 +41,7 @@
     <link rel="alternate stylesheet" href="assets/css/colors/slate.css" title="slate">
     <link rel="alternate stylesheet" href="assets/css/colors/yellow.css" title="yellow">
     <style>
-        .bhautik {
+        .color-text {
             background: linear-gradient(271deg, #a0e9ff 30%, #a162e8 50%, #f093b0 70%, #edca85 94%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -91,15 +91,15 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#mh-experience">Experiences</a>
                             </li>
-                            <li class="nav-item">
+                            <!-- <li class="nav-item">
                                 <a class="nav-link" href="#mh-portfolio">Portfolio</a>
-                            </li>
-                            <li class="nav-item">
+                            </li> -->
+                            <!-- <li class="nav-item">
                                 <a class="nav-link" href="#mh-pricing">Pricing</a>
-                            </li>
-                            <li class="nav-item">
+                            </li> -->
+                            <!-- <li class="nav-item">
                                 <a class="nav-link" href="#mh-blog">Blog</a>
-                            </li>
+                            </li> -->
                             <li class="nav-item">
                                 <a class="nav-link" href="#mh-contact">Contact</a>
                             </li>
@@ -125,10 +125,13 @@
                                 <span>Hello I'm</span>
                             </div>
 
-                            <h2 class="wow fadeInUp bhautik" data-wow-duration="0.8s" data-wow-delay="0.2s">Bhautik
-                                Savaj <img src="./IN.png" alt=""></h2>
-                            <h4 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">Full stack developer
-                                | Photographer
+                            <h2 class="wow fadeInUp color-text" data-wow-duration="0.8s" data-wow-delay="0.2s">Bhautik
+                                Savaj <img style="position: absolute;" src="./IN.png" alt=""></h2>
+                            <h4 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s"><a href=""
+                                    class="typewrite" data-period="30"
+                                    data-type='[ "Web Designer", "Photographer", "Web Developer" ]'>
+                                    <span class="wrap"></span>
+                                </a>
                             </h4>
 
                             <ul>
@@ -143,10 +146,15 @@
                             </ul>
 
                             <ul class="social-icon wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.7s">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-github"></i></a></li>
-                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                <li><a target="_blank" href="https://www.instagram.com/bhavy_1208"><i
+                                            class="fa fa-instagram"></i></a></li>
+                                <li><a target="_blank" href="https://twitter.com/savajbhautik143"><i
+                                            class="fa fa-twitter"></i></a></li>
+                                <li><a target="_blank" href="https://github.com/bhautiksavaj"><i
+                                            class="fa fa-github"></i></a></li>
+                                <li><a target="_blank" href="https://www.linkedin.com/in/bhautik-savaj-8b265920a/"><i
+                                            class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+
                             </ul>
                         </div>
                     </div>
@@ -933,22 +941,23 @@
                     <div class="col-sm-12 mh-copyright wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
                         <div class="row">
                             <div class="col-sm-4">
-                                <!-- <div class="text-left text-xs-center">
-                                    <p><a href="templateshub.net">Templates Hub</a></p>
-                                </div> -->
+
                             </div>
-                            <div class="col-sm-4 d-flex justify-content-between">
+                            <div class="col-sm-4">
                                 <ul class="social-icon d-flex justify-content-between">
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-github"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                    <li><a target="_blank" href="https://www.instagram.com/bhavy_1208"><i
+                                                class="fa fa-instagram"></i></a></li>
+                                    <li><a target="_blank" href="https://twitter.com/savajbhautik143"><i
+                                                class="fa fa-twitter"></i></a></li>
+                                    <li><a target="_blank" href="https://github.com/bhautiksavaj"><i
+                                                class="fa fa-github"></i></a></li>
+                                    <li><a target="_blank"
+                                            href="https://www.linkedin.com/in/bhautik-savaj-8b265920a/"><i
+                                                class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                                 </ul>
                             </div>
                             <div class="col-sm-4">
-                                <!-- <div class="text-left text-xs-center">
-                                    <p><a href="templateshub.net">Templates Hub</a></p>
-                                </div> -->
+
                             </div>
                         </div>
                     </div>
@@ -962,7 +971,64 @@
     * JS Files *
     ==============
     -->
+    <script>
+        var TxtType = function (el, toRotate, period) {
+            this.toRotate = toRotate;
+            this.el = el;
+            this.loopNum = 0;
+            this.period = parseInt(period, 10) || 2000;
+            this.txt = '';
+            this.tick();
+            this.isDeleting = false;
+        };
 
+        TxtType.prototype.tick = function () {
+            var i = this.loopNum % this.toRotate.length;
+            var fullTxt = this.toRotate[i];
+
+            if (this.isDeleting) {
+                this.txt = fullTxt.substring(0, this.txt.length - 1);
+            } else {
+                this.txt = fullTxt.substring(0, this.txt.length + 1);
+            }
+
+            this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+            var that = this;
+            var delta = 200 - Math.random() * 100;
+
+            if (this.isDeleting) { delta /= 2; }
+
+            if (!this.isDeleting && this.txt === fullTxt) {
+                delta = this.period;
+                this.isDeleting = true;
+            } else if (this.isDeleting && this.txt === '') {
+                this.isDeleting = false;
+                this.loopNum++;
+                delta = 500;
+            }
+
+            setTimeout(function () {
+                that.tick();
+            }, delta);
+        };
+
+        window.onload = function () {
+            var elements = document.getElementsByClassName('typewrite');
+            for (var i = 0; i < elements.length; i++) {
+                var toRotate = elements[i].getAttribute('data-type');
+                var period = elements[i].getAttribute('data-period');
+                if (toRotate) {
+                    new TxtType(elements[i], JSON.parse(toRotate), period);
+                }
+            }
+            // INJECT CSS
+            var css = document.createElement("style");
+            css.type = "text/css";
+            css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+            document.body.appendChild(css);
+        };
+    </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
     <!-- jQuery -->
@@ -989,99 +1055,19 @@
     <script src="assets/plugins/js/isotope.pkgd.js"></script>
     <script src="assets/plugins/js/packery-mode.pkgd.js"></script>
     <!-- Map api -->
-    <script
-        src="http://maps.googleapis.com/maps/api/js?v=3.exp&amp;key=AIzaSyCRP2E3BhaVKYs7BvNytBNumU0MBmjhhxc"></script>
+    <!-- <script
+        src="http://maps.googleapis.com/maps/api/js?v=3.exp&amp;key=AIzaSyCRP2E3BhaVKYs7BvNytBNumU0MBmjhhxc"></script> -->
     <!-- Custom Scripts-->
     <script src="assets/js/map-init.js"></script>
     <script src="assets/js/custom-scripts.js"></script>
+    <!-- animation on fonts -->
 
 
     <!-- ****************
       After neccessary customization/modification, Please minify 
       JavaScript/jQuery according to http://browserdiet.com/en/ for better performance
     **************** -->
-    <!-- STYLE SWITCH STYLESHEET ONLY FOR DEMO -->
-    <!-- <link rel="stylesheet" href="demo/demo.css">
-    <script type="text/javascript" src="demo/styleswitcher.js"></script>
-    <script type="text/javascript" src="demo/demo.js"></script> -->
-    <!-- <div class="demo-style-switch" id="switch-style">
-        <a id="toggle-switcher" class="switch-button"><i class="fa fa-snowflake-o fa-spin"></i></a>
-        <div class="switched-options">
-            <ul>
-                <li class="mh-demo-styles">
-                    <h4>Style One </h4>
-                    <ul>
-                        <li>
-                            <a href="home-one.html"> <img src="assets/images/h1w.png" alt="" class="img-fluid"></a>
-                        </li>
-                        <li>
-                            <a href="home-one-w.html"> <img src="assets/images/h1.png" alt="" class="img-fluid"></a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="mh-demo-styles">
-                    <h4>Style Two </h4>
-                    <ul>
-                        <li>
-                            <a href="home-two.html"> <img src="assets/images/h2w.png" alt="" class="img-fluid"></a>
-                        </li>
-                        <li>
-                            <a href="home-two-w.html"> <img src="assets/images/h2.png" alt="" class="img-fluid"></a>
-                        </li>
-                    </ul>
-                </li>
 
-                <li class="mh-demo-styles">
-                    <h4>RTl</h4>
-                    <ul>
-                        <li>
-                            <a href="home-rtl.html"> <img src="assets/images/h3w.png" alt="" class="img-fluid"></a>
-                        </li>
-                        <li>
-                            <a href="home-rtl-w.html"> <img src="assets/images/h3.png" alt="" class="img-fluid"></a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            <div class="config-title">
-                Colors :
-            </div>
-            <ul class="styles">
-                <li><a href="#" onclick="setActiveStyleSheet('blue'); return false;" title="Blue">
-                        <div class="blue"></div>
-                    </a>
-                </li>
-                <li><a href="#" onclick="setActiveStyleSheet('purple'); return false;" title="Purple">
-                        <div class="purple"></div>
-                    </a>
-                </li>
-                <li><a href="#" onclick="setActiveStyleSheet('blue-munsell'); return false;" title="Blue Munsell">
-                        <div class="blue-munsell"></div>
-                    </a>
-                </li>
-                <li><a href="#" onclick="setActiveStyleSheet('orange'); return false;" title="Orange">
-                        <div class="orange"></div>
-                    </a>
-                </li>
-                <li><a href="#" onclick="setActiveStyleSheet('slate'); return false;" title="Slate">
-                        <div class="slate"></div>
-                    </a>
-                </li>
-                <li><a href="#" onclick="setActiveStyleSheet('green'); return false;" title="Green">
-                        <div class="green"></div>
-                    </a>
-                </li>
-                <li><a href="#" onclick="setActiveStyleSheet('yellow'); return false;" title="Yellow">
-                        <div class="yellow"></div>
-                    </a>
-                </li>
-                <li><a href="#" onclick="setActiveStyleSheet('red'); return false;" title="Red">
-                        <div class="red"></div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div> -->
 </body>
 
 </html>
