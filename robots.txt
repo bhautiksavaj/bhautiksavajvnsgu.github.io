@@ -1,0 +1,12 @@
+User-agent 
+
+User-agent Google
+Allow 
+
+User-agent Bing
+Allow 
+
+# Directories
+
+# sitemap.xml Path
+https://bhautiksavaj.me/sitemap.xml
