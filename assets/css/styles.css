@@ -626,7 +626,8 @@ button {
 .white-vertion .contact-message {
   color: #fff; }
 .white-vertion .nav-strict {
-  background-color: #fff; }
+  background-color: rgba(255, 255, 255, 0.544);;
+ }
 .white-vertion .img-color-overlay {
   background-color: rgba(255, 255, 255, 0.9); }
 .white-vertion .dark-bg {
@@ -744,7 +745,10 @@ button {
   .dark-vertion .contact-message {
     color: #fff; }
   .dark-vertion .nav-strict {
-    background-color: #202026; }
+    /* add transparent bg here for header  */
+    background-color: #2020269e;
+    /* background-color: rgba(22, 22, 26, 0.7); */
+    border-color: rgba(255, 255, 255, 0.15); }
   .dark-vertion .img-color-overlay {
     background-color: rgba(0, 0, 0, 0.9); }
   .dark-vertion .mh-home .mh-header-info .social-icon li .fa:hover {
@@ -921,6 +925,10 @@ body {
 
 .mh-header {
   padding: 20px 0;
+  width: 90%;
+  margin: auto;
+  /* background-color: ; */
+  border-radius: 0 0 10px 10px;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
   -webkit-transition: 0.3s;
